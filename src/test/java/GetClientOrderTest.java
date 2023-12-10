@@ -62,7 +62,7 @@ public class GetClientOrderTest {
         response.statusCode(HttpStatus.SC_OK);
 
     }
-    @DisplayName("Авторизованному пользователю можно получить свои заказы")
+    @DisplayName("Авторизованному пользователю можно получить не более 50 последних заказов")
     @Test
     public void authorizedUserCanGetOnlyLast50Orders() {
         // Создаем дополнительно 50 заказов
